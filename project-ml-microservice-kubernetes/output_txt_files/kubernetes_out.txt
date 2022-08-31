@@ -1,1 +1,18 @@
-<paste log output from Kubernetes-mediated prediction, here>
+voclabs:~/environment/udacity_project4/project-ml-microservice-kubernetes (master) $ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "noobmli" already exists
+./run_kubernetes.sh: line 13: --port=80: command not found
+NAME      READY   STATUS    RESTARTS      AGE
+noobmli   1/1     Running   2 (17m ago)   57m
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+
+
+(.devops) voclabs:~/environment/udacity_project4/project-ml-microservice-kubernetes (master) $ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
